@@ -225,6 +225,17 @@ img {
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg); } }
+
+
+  .peaky-preloader {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+  }
 /* :: 3.6.0 Miscellaneous */
 .bg {
   background-position: center center;
@@ -413,10 +424,10 @@ img {
           color: #bd177a; }
         @media only screen and (min-width: 768px) and (max-width: 991px) {
           .header-area .musica-main-menu .classy-navbar .classynav ul li a {
-            background-color: #0c0527; } }
+            background-color: #C9C9C9; } }
         @media only screen and (max-width: 767px) {
           .header-area .musica-main-menu .classy-navbar .classynav ul li a {
-            background-color: #0c0527; } }
+            background-color: #C9C9C9; } }
       .header-area .musica-main-menu .classy-navbar .classynav ul li.megamenu-item > a::after,
       .header-area .musica-main-menu .classy-navbar .classynav ul li.has-down > a::after {
         color: #ffffff; }
@@ -459,7 +470,7 @@ img {
     top: 0;
     left: 0;
     z-index: 9999;
-    background-color: #0c0527;
+    background-color: #C9C9C9;
     box-shadow: 0 5px 50px 15px rgba(0, 0, 0, 0.2); }
     @media only screen and (max-width: 767px) {
       .header-area .is-sticky .musica-main-menu {
@@ -470,10 +481,10 @@ img {
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .breakpoint-on .classy-navbar .classy-menu {
-    background-color: #0c0527; } }
+    background-color: #C9C9C9; } }
 @media only screen and (max-width: 767px) {
   .breakpoint-on .classy-navbar .classy-menu {
-    background-color: #0c0527; } }
+    background-color: #C9C9C9; } }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .classynav ul li .megamenu .single-mega.cn-col-4 {
@@ -679,7 +690,7 @@ img {
 .career-timeline-area {
   position: relative;
   z-index: 1;
-  background-color: #0c0527; }
+  background-color: #C9C9C9; }
   .career-timeline-area .first-img {
     position: absolute;
     z-index: -5;
@@ -744,7 +755,7 @@ img {
 .upcoming-shows-area {
   position: relative;
   z-index: 1;
-  background-color: #0c0527; }
+  background-color: #C9C9C9; }
 
 .single-upcoming-shows {
   position: relative;
@@ -1094,7 +1105,7 @@ img {
 .featured-album-area {
   position: relative;
   z-index: 1;
-  background-color: #0c0527; }
+  background-color: #C9C9C9; }
 
 .featured-album-content {
   position: relative;
@@ -1326,7 +1337,7 @@ img {
 .musica-music-artists-area {
   position: relative;
   z-index: 1;
-  background-color: #0c0527; }
+  background-color: #C9C9C9; }
   .musica-music-artists-area .music-search {
     position: relative;
     z-index: 1;
