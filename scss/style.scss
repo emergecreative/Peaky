@@ -427,10 +427,10 @@ img {
         &::after {
             @include trans-duration(750ms);
             color: $white-color;
-            background: #cc1573;
-            background: -webkit-linear-gradient(to right, #cc1573, #5722a9);
+            background: rgb(130,91,189);
+            background: -webkit-linear-gradient(37deg, rgba(130,91,189,0.8939950980392157) 25%, rgba(86,123,179,1) 75%);
             background: -webkit-linear-gradient(left, #cc1573, #5722a9);
-            background: linear-gradient(to right, #cc1573, #5722a9);
+            background: linear-gradient(37deg, rgba(130,91,189,0.8939950980392157) 25%, rgba(86,123,179,1) 75%);
             content: '';
             position: absolute;
             width: 100%;
@@ -561,7 +561,7 @@ img {
 }
 
 .classy-navbar .nav-brand {
-    max-width: 130px;
+    max-width: 250px;
 }
 
 .breakpoint-on .classy-navbar .classy-menu {
@@ -1627,9 +1627,9 @@ img {
         position: relative;
         margin-bottom: 30px;
         span {
-            background: #cc1573;
-            background: -webkit-linear-gradient(to right, #cc1573, #5722a9);
-            background: linear-gradient(to right, #cc1573, #5722a9);
+            background: rgb(130,91,189);
+            background: -webkit-linear-gradient(37deg, rgba(130,91,189,0.8939950980392157) 25%, rgba(86,123,179,1) 75%);
+            background: linear-gradient(37deg, rgba(130,91,189,0.8939950980392157) 25%, rgba(86,123,179,1) 75%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             font-size: 72px;
