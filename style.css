@@ -48,6 +48,10 @@
   margin: 0;
   padding: 0; }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Raleway", sans-serif;
   font-size: 14px; }
@@ -1929,6 +1933,11 @@ img {
     color: #bd177a; }
   .musica-tabs-content .tab-content h6 {
     font-size: 18px; }
+
+
+#tipo-servico {
+  height: calc(3.25rem + 2px);
+}
 
 /* ====== The End ====== */
 
