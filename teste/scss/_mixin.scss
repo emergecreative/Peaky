@@ -62,7 +62,7 @@
 }
 
 @mixin bg-gradients {
-    background: #cc1573;
-    background: -webkit-linear-gradient(to right, #cc1573, #5722a9);
-    background: linear-gradient(to right, #cc1573, #5722a9);
+    background: rgb(130,91,189);
+    background: -webkit-linear-gradient(37deg, rgba(130,91,189,0.8939950980392157) 25%, rgba(86,123,179,1) 75%);
+    background: linear-gradient(37deg, rgba(130,91,189,0.8939950980392157) 25%, rgba(86,123,179,1) 75%);
 }
