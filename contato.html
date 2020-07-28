@@ -40,7 +40,7 @@
                     <nav class="classy-navbar justify-content-between" id="musicaNav">
 
                         <!-- Nav brand -->
-                        <a href="index.html" class="nav-brand"><img src="assets/img/core/logo.png" alt=""></a>
+                        <a href="index.html" class="nav-brand"><img src="assets/img/core/logo-white.png" class="white" alt=""><img src="assets/img/core/logo.png" alt="" id="color" style="display: none;"></a>
 
                         <!-- Navbar Toggler -->
                         <div class="classy-navbar-toggler">
@@ -60,8 +60,8 @@
                                 <ul>
                                     <li><a href="index.html">Início</a></li>
                                     <li><a href="index.html#about">Sobre</a></li>
-                                    <li><a href="index.html#portfolio">Galeria</a></li>
-                                    <li><a href="contato.html">Orçamentos</a></li>
+                                    <li><a href="index.html#portfolio">Serviços</a></li>
+                                    <li><a href="contato.php">Contato</a></li>
                                 </ul>
 
                                 <!-- Social Button -->
@@ -103,19 +103,16 @@
                 <div class="col-12 col-lg-6">
                     <div class="contact-content mb-100">
                         <a href="#"><img src="assets/img/core/logo3.png" alt=""></a>
-                        <p class="copywrite-text"><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-</p>
+                        
 
                         <!-- Contact Social Info -->
-                        <div class="contact-social-info mt-50">
+                        <div class="contact-social-info mt-50" id="ico-size">
                             <a href="https://www.facebook.com/peakyvideos/" data-toggle="tooltip" data-placement="top" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                             <a href="https://www.instagram.com/peaky.videos/" data-toggle="tooltip" data-placement="top" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                             <a href="https://www.youtube.com/channel/UCm0JWMwc7s784MT7aqnI3Cw" data-toggle="tooltip" data-placement="top" title="YouTube"><i class="fa fa-youtube" aria-hidden="true"></i></a>
                         </div>
                         
-                        <p class="mb-30">Sed dapibus varius massa vel auctor. Nulla massa dui, posuere non erat in, eleifend mattis dui. Vivamus luctus luctus rhoncus. Donec sagittis nulla id finibus iaculis. Mauris odio tortor, suscipit non elit ut, imperdiet ornare erat.</p>
+                        <!-- <p class="mb-30">Sed dapibus varius massa vel auctor. Nulla massa dui, posuere non erat in, eleifend mattis dui. Vivamus luctus luctus rhoncus. Donec sagittis nulla id finibus iaculis. Mauris odio tortor, suscipit non elit ut, imperdiet ornare erat.</p> -->
 
                         <!-- Single Contact Info -->
                         <div class="single-contact-info d-flex align-items-center">
@@ -130,7 +127,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                             <div class="icon">
                                 <img src="assets/img/core/message.png" alt="">
                             </div>
-                            <h6>+53 345 7953 32453</h6>
+                            <a href="tel:+5511934004088"><h6>+55 (11) 93400-4088</h6></a>
                         </div>
 
                         <!-- Single Contact Info -->
@@ -138,7 +135,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                             <div class="icon">
                                 <img src="assets/img/core/smartphone.png" alt="">
                             </div>
-                            <h6>yourmail@gmail.com</h6>
+                            <a href="mailto:contato@peakyvideos.com.br"><h6>contato@peakyvideos.com.br</h6></a>
                         </div>
                     </div>
                 </div>
@@ -147,15 +144,18 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     <div class="contact-content mb-100">
                         <!-- Contact Form Area -->
                         <div class="contact-form-area">
-                            <form action="processa.php" method="post">
+                            <form action="" method="post">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="name" placeholder="Nome">
+                                    <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome">
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" id="email" placeholder="Seu E-mail">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Seu E-mail">
                                 </div>
                                 <div class="form-group">
-                                    <select name="servico" class="form-control" id="tipo-servico" placeholder="Tipo de serviço">
+                                    <input type="tel" class="form-control" id="tel" name="tel" placeholder="Telefone">
+                                </div>
+                                <div class="form-group">
+                                    <select class="form-control" id="tipo-servico" name="tipo-servico" placeholder="Tipo de serviço">
                                         <option value="">Selecione um Serviço</option>
                                         <option value="institucional"><strong>Vídeo Institucional</strong></option>
                                         <option value="prod-serv">Produtos e Serviços</option>
@@ -168,13 +168,19 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                                     </select>
                                 </div>
                                 <div class="form-group">
-                                    <input type="text" class="form-control" id="titulo" placeholder="Título do Projeto">
-                                </div>
-                                <div class="form-group">
-                                    <textarea name="message" class="form-control" id="message" cols="30" rows="10" placeholder="Escreva aqui um resumo sobre as ideias para o projeto"></textarea>
+                                    <textarea name="message" class="form-control" id="message" name="message" cols="30" rows="10" placeholder="Escreva aqui um resumo sobre as ideias para o projeto"></textarea>
                                 </div>
                                 <button class="btn musica-btn mt-30" type="submit">Enviar</button>
                             </form>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12" style="justify-content: center;">
+                            <?php
+                                //
+                                //require "formularios.php";
+                                //echo nome()." # ".emaill()." # ".serv()." # ".tell()." # ".msg()." # ";
+                            ?>
                         </div>
                     </div>
                 </div>
@@ -200,7 +206,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <!-- ##### CTA Area End ##### -->
 
     <!-- ##### Footer Area Start ##### -->
-    <footer class="footer-area section-padding-100-0">
+    <footer class="footer-area footer-padding">
         <div class="container-fluid">
             <div class="row">
 
@@ -208,10 +214,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                 <div class="col-12 col-md-6 col-xl-3">
                     <div class="footer-widget-area mb-100">
                         <a href="#"><img src="assets/img/core/logo2.png" alt=""></a>
-                        <p class="copywrite-text"><a href="#"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-</p>
+                        
                     </div>
                 </div>
 
@@ -223,11 +226,29 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                         </div>
                         <nav>
                             <ul class="footer-nav">
-                                <li><a href="#about">Sobre</a></li>
-                                <li><a href="#portfolio">Galeria</a></li>
-                                <li><a href="#team">Equipe</a></li>
-                                <li><a href="contato.html">Orçamentos</a></li>
+                                <li><a href="index.html#about">Sobre</a></li>
+                                <li><a href="index.html#portfolio">Serviços</a></li>
+                                <li><a href="index.html#team">Equipe</a></li>
+                                <li><a href="contato.php">Orçamentos</a></li>
                             </ul>
+                        </nav>
+                    </div>
+                </div>
+
+                <!-- Footer Widget Area -->
+                <div class="col-12 col-sm-4 col-xl-2">
+                    <div class="footer-widget-area mb-100">
+                        <div class="widget-title">
+                            <h4>Social</h4>
+                        </div>
+                        <nav>
+                            <div class="contact-social-info mt-50" id="social-footer">
+                                    <a href="https://www.facebook.com/peakyvideos/" rel="nofollow"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    
+                                    <a href="https://www.instagram.com/peaky.videos/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    
+                                    <a href="https://www.youtube.com/channel/UCm0JWMwc7s784MT7aqnI3Cw"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                            </div>
                         </nav>
                     </div>
                 </div>
@@ -245,27 +266,18 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                     </div>
                 </div>
 
-                <!-- Footer Widget Area -->
-                <div class="col-12 col-sm-4 col-xl-2">
-                    <div class="footer-widget-area mb-100">
-                        <div class="widget-title">
-                            <h4>Social</h4>
-                        </div>
-                        <nav>
-                            <ul class="footer-nav">
-                                <li><a href="https://www.facebook.com/peakyvideos/">Facebook</a></li>
-                                <li><a href="https://www.instagram.com/peaky.videos/">Instagram</a></li>
-                                <li><a href="https://www.youtube.com/channel/UCm0JWMwc7s784MT7aqnI3Cw">YouTube</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
+
 
                 <!-- Footer Widget Area -->
  <!--                <div class="">
                     
                 </div> -->
 
+            </div>
+            <div class="text-center col-12">
+                <p>
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos Direitos Reservados | Desenvolvido por <a href="http://emergecreative.com.br/"target="_blank"><img src="http://emergecreative.com.br/images/logo_emerge_inicio.png"width='80pg'></a>
+                </p>
             </div>
         </div>
     </footer>

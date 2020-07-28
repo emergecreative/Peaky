@@ -204,7 +204,19 @@
     // :: 11.0 ScrollDown Active Code
     $("#scrollDown").on('click', function () {
         $('html, body').animate({
-            scrollTop: $("#about").offset().top - 85
+            scrollTop: $("#about").offset().top - 110
+        }, 1500);
+    });
+
+    $("#scrollDownPort").on('click', function () {
+        $('html, body').animate({
+            scrollTop: $("#portfolio").offset().top - 110
+        }, 1500);
+    });
+
+    $("#scrollDown").on('click', function () {
+        $('html, body').animate({
+            scrollTop: $("#about").offset().top - 110
         }, 1500);
     });
 
@@ -217,5 +229,27 @@
     if (browserWindow.width() > 767) {
         new WOW().init();
     }
+    
+/*     function offsetAnchor(){
+        if (location.hash.length !==0){
+            window.scrollTo(window.scrollX,window.scrollY-100);
+        }
+    }
+
+    $(window).on("hashchange", function (){
+        if(location.hash.length!==0){
+            window.scrollTo(window.scrollX,window.scrollY-100);
+        }
+    });
+ */
+/*     $(document).on("click",'a[href^="#"]', function (e){
+        window.setTimeout(function (){
+            offsetAnchor();
+        },0);
+    });
+ */
+
 
 })(jQuery);
+
+
