@@ -61,7 +61,7 @@
                                     <li><a href="index.html">Início</a></li>
                                     <li><a href="index.html#about">Sobre</a></li>
                                     <li><a href="index.html#portfolio">Serviços</a></li>
-                                    <li><a href="contato.php">Contato</a></li>
+                                    <li><a href="contato.html">Contato</a></li>
                                 </ul>
 
                                 <!-- Social Button -->
@@ -239,7 +239,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
                                 <li><a href="index.html#about">Sobre</a></li>
                                 <li><a href="index.html#portfolio">Serviços</a></li>
                                 <li><a href="index.html#team">Equipe</a></li>
-                                <li><a href="contato.php">Orçamentos</a></li>
+                                <li><a href="contato.html">Orçamentos</a></li>
                             </ul>
                         </nav>
                     </div>
