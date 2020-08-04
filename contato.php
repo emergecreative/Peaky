@@ -67,11 +67,11 @@
                                 <!-- Social Button -->
                                 <div class="top-social-info">
                                     
-                                    <a href="https://www.facebook.com/peakyvideos/" rel="nofollow"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a href="https://www.facebook.com/peakyvideos/" rel="nofollow" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                     
-                                    <a href="https://www.instagram.com/peaky.videos/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    <a href="https://www.instagram.com/peaky.videos/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                                     
-                                    <a href="https://www.youtube.com/channel/UCm0JWMwc7s784MT7aqnI3Cw"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                                    <a href="https://www.youtube.com/channel/UCm0JWMwc7s784MT7aqnI3Cw" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
                                 </div>
 
                             </div>
@@ -243,11 +243,11 @@
                         </div>
                         <nav>
                             <div class="contact-social-info mt-50" id="social-footer">
-                                    <a href="https://www.facebook.com/peakyvideos/" rel="nofollow"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="https://www.facebook.com/peakyvideos/" rel="nofollow" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                     
-                                    <a href="https://www.instagram.com/peaky.videos/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="https://www.instagram.com/peaky.videos/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                                     
-                                    <a href="https://www.youtube.com/channel/UCm0JWMwc7s784MT7aqnI3Cw"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                                <a href="https://www.youtube.com/channel/UCm0JWMwc7s784MT7aqnI3Cw" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
                             </div>
                         </nav>
                     </div>
