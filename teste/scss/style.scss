@@ -1200,14 +1200,14 @@ img {
     }
 }
 
-.single-music-player {
+.servicos-video {
     position: relative;
     z-index: 1;
     overflow: hidden;
     img {
         @include trans-duration(1000ms);
     }
-    .music-info {
+    .video-info {
         @include trans-duration(500ms);
         width: 100%;
         position: absolute;
@@ -1229,7 +1229,7 @@ img {
             line-height: 1;
         }
     }
-    .music-play-icon {
+    .video-play-icon {
         .audioplayer {
             margin: 0;
             padding: 0;
@@ -1260,7 +1260,7 @@ img {
     }
     &:hover,
     &:focus {
-        .music-info {
+        .video-info {
             background-color: $hover-color;
         }
         img {
