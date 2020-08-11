@@ -1035,14 +1035,14 @@ img {
       padding-left: 0;
       padding-right: 0; } }
 
-.single-music-player {
+.servicos-video {
   position: relative;
   z-index: 1;
   overflow: hidden; }
-  .single-music-player img {
+  .servicos-video img {
     -webkit-transition-duration: 1000ms;
     transition-duration: 1000ms; }
-  .single-music-player .music-info {
+  .servicos-video .video-info {
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
     width: 100%;
@@ -1053,16 +1053,16 @@ img {
     z-index: 10;
     padding: 30px; }
     @media only screen and (max-width: 767px) {
-      .single-music-player .music-info {
+      .servicos-video .video-info {
         padding: 15px; } }
-    .single-music-player .music-info h5 {
+    .servicos-video .video-info h5 {
       font-size: 18px;
       color: #ffffff; }
-    .single-music-player .music-info p {
+    .servicos-video .video-info p {
       color: #ffffff;
       margin-bottom: 0;
       line-height: 1; }
-  .single-music-player .music-play-icon .audioplayer {
+  .servicos-video .video-play-icon .audioplayer {
     margin: 0;
     padding: 0;
     width: auto;
@@ -1070,23 +1070,23 @@ img {
     border: none;
     border-radius: 0;
     background: transparent; }
-    .single-music-player .music-play-icon .audioplayer .audioplayer-playpause {
+    .servicos-video .video-play-icon .audioplayer .audioplayer-playpause {
       background-color: #ffffff; }
-    .single-music-player .music-play-icon .audioplayer:not(.audioplayer-playing) .audioplayer-playpause a {
+    .servicos-video .video-play-icon .audioplayer:not(.audioplayer-playing) .audioplayer-playpause a {
       border-top: 10px solid transparent;
       border-right: none;
       border-bottom: 10px solid transparent;
       border-left: 18px solid #000; }
-    .single-music-player .music-play-icon .audioplayer .audioplayer-playing .audioplayer-playpause a::before,
-    .single-music-player .music-play-icon .audioplayer .audioplayer-playing .audioplayer-playpause a::after {
+    .servicos-video .video-play-icon .audioplayer .audioplayer-playing .audioplayer-playpause a::before,
+    .servicos-video .video-play-icon .audioplayer .audioplayer-playing .audioplayer-playpause a::after {
       background-color: #bd177a; }
-    .single-music-player .music-play-icon .audioplayer .audioplayer-bar,
-    .single-music-player .music-play-icon .audioplayer .audioplayer-time,
-    .single-music-player .music-play-icon .audioplayer .audioplayer-volume {
+    .servicos-video .video-play-icon .audioplayer .audioplayer-bar,
+    .servicos-video .video-play-icon .audioplayer .audioplayer-time,
+    .servicos-video .video-play-icon .audioplayer .audioplayer-volume {
       display: none !important; }
-  .single-music-player:hover .music-info, .single-music-player:focus .music-info {
+  .servicos-video:hover .video-info, .servicos-video:focus .video-info {
     background-color: #bd177a; }
-  .single-music-player:hover img, .single-music-player:focus img {
+  .servicos-video:hover img, .servicos-video:focus img {
     -webkit-transform: scale(1.2);
     transform: scale(1.2); }
 
