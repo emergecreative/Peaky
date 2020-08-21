@@ -1,3 +1,12 @@
+function abriDivs(){
+    $('#enviarCamposFormulario').val('Enviar');
+    $('#enviarCamposNewsletter').val('Enviar');
+    };
+
+
+
+
+    
 function RegistrarFormContato(){
 
     if($("#nome").val()=="" || $("#nome").val().length < 3){
@@ -27,16 +36,23 @@ function RegistrarFormContato(){
     if($("#enviarCamposFormulario").val()=="Aguarde..."){
         return false;
     }
+
+    let response = grecaptcha.getResponse();
+    
+    if(response.length==0){
+        alert("Captcha obrigatório.");
+        return false;
+    }
     
     
     
-    $('#enviarCamposFormulario').text("Aguarde...");
+    $('#enviarCamposFormulario').val("Aguarde...");
     
     
     var xmlhttp = new XMLHttpRequest();
     
     xmlhttp.onreadystatechange = function () {
-        if(this.readyState == 5 && this.status == 200) {
+        if(this.readyState == 4 && this.status == 200) {
             //$('#retornoemail').html(this.responseText);
             document.getElementById("retornoemail").innerHTML = this.responseText;
             $('#enviarCamposFormulario').val('Enviado');
@@ -50,9 +66,15 @@ function RegistrarFormContato(){
     
     
     
-    qualUrlGet = "http://peakyvideos.com.br/mail/templateEmail.php?infoType=Contato&nome=" + $("#nome").val() + "&email=" + $("#email").val() + "&tipo-servico="+ $("#tipo-servico").val() + "&tel=" + $("#tel").val() + "&mensagem=" + $("#message").val();
+    qualUrlGet = "https://www.peakyvideos.com.br/mail/templateEmail.php?infoType=Contato&nome=" + $("#nome").val() + "&email=" + $("#email").val() + "&tipo-servico="+ $("#tipo-servico").val() + "&tel=" + $("#tel").val() + "&mensagem=" + $("#message").val();
     
-    console.log(xmlhttp.open("GET", qualUrlGet, true));
+    xmlhttp.open("GET", qualUrlGet, true);
     xmlhttp.send();
     
 }
+
+$('#enviarCamposFormulario').click(function (e) { e.preventDefault(); RegistrarFormContato()});
+
+/* let seletor = document.getElementById('enviarCamposFormulario');
+
+seletor.addEventListener(click, RegistrarFormContato()); */

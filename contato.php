@@ -9,17 +9,18 @@
     <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
     <!-- Title -->
-    <title>Musica - Music Template</title>
+    <title>Peaky Vídeos - Contato</title>
 
     <!-- Favicon -->
     <link rel="icon" href="assets/img/core/favicon.svg">
 
     <!-- Core Stylesheet -->
     <link rel="stylesheet" href="style.css">
-
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    
 </head>
 
-<body>
+<body onload="abriDivs();">
     <!-- ##### Preloader ##### -->
 <!--     <div class="preloader d-flex align-items-center justify-content-center">
         <div class="circle-preloader">
@@ -67,11 +68,11 @@
                                 <!-- Social Button -->
                                 <div class="top-social-info">
                                     
-                                    <a href="https://www.facebook.com/peakyvideos/" rel="nofollow" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a href="https://www.facebook.com/peakyvideos/" rel="nofollow"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                     
-                                    <a href="https://www.instagram.com/peaky.videos/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    <a href="https://www.instagram.com/peaky.videos/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                                     
-                                    <a href="https://www.youtube.com/channel/UCm0JWMwc7s784MT7aqnI3Cw" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                                    <a href="https://www.youtube.com/channel/UCm0JWMwc7s784MT7aqnI3Cw"><i class="fa fa-youtube" aria-hidden="true"></i></a>
                                 </div>
 
                             </div>
@@ -117,17 +118,9 @@
                         <!-- Single Contact Info -->
                         <div class="single-contact-info d-flex align-items-center">
                             <div class="icon">
-                                <img src="assets/img/core/placeholder.png" alt="">
-                            </div>
-                            <h6>1481 Creekside Lane Avila Beach, CA 931</h6>
-                        </div>
-
-                        <!-- Single Contact Info -->
-                        <div class="single-contact-info d-flex align-items-center">
-                            <div class="icon">
                                 <img src="assets/img/core/message.png" alt="">
                             </div>
-                            <a href="tel:+5511934004088"><h6>+55 (11) 93400-4088</h6></a>
+                            <a href="mailto:contato@peakyvideos.com.br"><h6>contato@peakyvideos.com.br</h6></a>
                         </div>
 
                         <!-- Single Contact Info -->
@@ -135,8 +128,18 @@
                             <div class="icon">
                                 <img src="assets/img/core/smartphone.png" alt="">
                             </div>
-                            <a href="mailto:contato@peakyvideos.com.br"><h6>contato@peakyvideos.com.br</h6></a>
+                            <a href="tel:+5511934004088"><h6>+55 (11) 93400-4088</h6></a>
                         </div>
+
+                        <!-- Single Contact Info -->
+                        <div class="single-contact-info d-flex align-items-center">
+                            <div class="icon">
+                                <img src="assets/img/core/placeholder.png" alt="">
+                            </div>
+                            <h6>Alameda Picasso 448, Santana de Parnaíba, SP - 06539-300</h6>
+                        </div>
+
+
                     </div>
                 </div>
 
@@ -144,7 +147,7 @@
                     <div class="contact-content mb-100">
                         <!-- Contact Form Area -->
                         <div class="contact-form-area">
-                            <form action="" method="post">
+                            <form id="form-contato" method="post">
                                 <div class="form-group">
                                     <input type="text" class="form-control" id="nome" name="nome" placeholder="Nome">
                                 </div>
@@ -170,17 +173,18 @@
                                 <div class="form-group">
                                     <textarea name="message" class="form-control" id="message" name="message" cols="30" rows="10" placeholder="Escreva aqui um resumo sobre as ideias para o projeto"></textarea>
                                 </div>
-                                <button class="btn musica-btn mt-30" type="submit">Enviar</button>
+                                <div class="g-recaptcha" data-sitekey="6LeE0cEZAAAAAOAAHYVNryqR_cDNEi7FIqN61NnD"></div>
+                                
+                                <!-- <button id="enviarCamposFormulario" class="btn musica-btn mt-30" onclick="RegistrarFormContato()" readonly>Enviar</button> -->
+                                <input class="btn musica-btn mt-30" id="enviarCamposFormulario" value="Enviar" readonly>
                             </form>
+                            <div id="retornoemail">
+                            </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-12" style="justify-content: center;">
-                            <?php
-                                //
-                                //require "formularios.php";
-                                //echo nome()." # ".emaill()." # ".serv()." # ".tell()." # ".msg()." # ";
-                            ?>
+                            
                         </div>
                     </div>
                 </div>
@@ -195,7 +199,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22236.40558254599!2d-118.25292394686001!3d34.057682914027104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2c75ddc27da13%3A0xe22fdf6f254608f4!2z4Kay4Ka4IOCmj-CmnuCnjeCmnOCnh-CmsuCnh-CmuCwg4KaV4KeN4Kav4Ka-4Kay4Ka_4Kar4KeL4Kaw4KeN4Kao4Ka_4Kav4Ka84Ka-LCDgpq7gpr7gprDgp43gppXgpr_gpqgg4Kav4KeB4KaV4KeN4Kak4Kaw4Ka-4Ka34KeN4Kaf4KeN4Kaw!5e0!3m2!1sbn!2sbd!4v1532328708137" allowfullscreen></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3660.1371405771774!2d-46.89708208502401!3d-23.455517184735548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf03fb93c20437%3A0x7422342c17f1c889!2sPeaky%20V%C3%ADdeos!5e0!3m2!1spt-PT!2sbr!4v1595967804419!5m2!1spt-PT!2sbr" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
                 </div>
             </div>
         </div>
@@ -243,11 +247,11 @@
                         </div>
                         <nav>
                             <div class="contact-social-info mt-50" id="social-footer">
-                                <a href="https://www.facebook.com/peakyvideos/" rel="nofollow" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                    <a href="https://www.facebook.com/peakyvideos/" rel="nofollow"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                                     
-                                <a href="https://www.instagram.com/peaky.videos/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                    <a href="https://www.instagram.com/peaky.videos/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                                     
-                                <a href="https://www.youtube.com/channel/UCm0JWMwc7s784MT7aqnI3Cw" target="_blank"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                                    <a href="https://www.youtube.com/channel/UCm0JWMwc7s784MT7aqnI3Cw"><i class="fa fa-youtube" aria-hidden="true"></i></a>
                             </div>
                         </nav>
                     </div>
@@ -276,7 +280,7 @@
             </div>
             <div class="text-center col-12">
                 <p>
-                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos Direitos Reservados | Desenvolvido por <a href="http://emergecreative.com.br/"target="_blank"><img src="http://emergecreative.com.br/images/logo_emerge_inicio.png"width='80pg'></a>
+                    Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos Direitos Reservados | Desenvolvido por <a href="https://www.emergecreative.com.br/"target="_blank"><img src="https://www.emergecreative.com.br/images/logo_emerge_inicio.png"width='80pg' ></a>
                 </p>
             </div>
         </div>
@@ -294,6 +298,7 @@
     <script src="js/plugins/plugins.js"></script>
     <!-- Active js -->
     <script src="js/active.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
